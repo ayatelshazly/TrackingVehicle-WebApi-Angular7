@@ -8,6 +8,7 @@ using TrackingVehiclesTask.BLL.DTO;
 
 namespace TrackingVehiclesTask.Api.Controllers
 {
+
     public class CustomerController : ApiController
     {
         protected readonly VehicleTrackingBusiness _vehicleTrackingBusiness;
