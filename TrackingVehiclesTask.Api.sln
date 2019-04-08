@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingVehiclesTask.Api", "TrackingVehiclesTask.Api\TrackingVehiclesTask.Api.csproj", "{694670D8-E5F9-4081-B33E-AF27843A28A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingVehiclesTask.DAL", "TrackingVehiclesTask.DAL\TrackingVehiclesTask.DAL.csproj", "{AFEA6D84-09C1-4E2F-A15F-3BF45D166DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingVehiclesTask.BLL", "TrackingVehiclesTask.BLL\TrackingVehiclesTask.BLL.csproj", "{F83DF71C-A71E-4C06-AF14-E0578B8A4448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingVehiclesTask.UnitTest", "TrackingVehiclesTask.UnitTest\TrackingVehiclesTask.UnitTest.csproj", "{C2489BA6-2BA3-49CD-A668-498821E7C59F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TrackingVehiclesWebSite", "TrackingVehiclesWebSite\", "{3EB2444A-321D-42A0-9EF8-E987A73E1A6B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50891"
+		Debug.AspNetCompiler.PhysicalPath = "TrackingVehiclesWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50891\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50891"
+		Release.AspNetCompiler.PhysicalPath = "TrackingVehiclesWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50891\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50891"
+		SlnRelativePath = "TrackingVehiclesWebSite\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694670D8-E5F9-4081-B33E-AF27843A28A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694670D8-E5F9-4081-B33E-AF27843A28A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694670D8-E5F9-4081-B33E-AF27843A28A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694670D8-E5F9-4081-B33E-AF27843A28A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEA6D84-09C1-4E2F-A15F-3BF45D166DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEA6D84-09C1-4E2F-A15F-3BF45D166DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEA6D84-09C1-4E2F-A15F-3BF45D166DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEA6D84-09C1-4E2F-A15F-3BF45D166DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83DF71C-A71E-4C06-AF14-E0578B8A4448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83DF71C-A71E-4C06-AF14-E0578B8A4448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83DF71C-A71E-4C06-AF14-E0578B8A4448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83DF71C-A71E-4C06-AF14-E0578B8A4448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2489BA6-2BA3-49CD-A668-498821E7C59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2489BA6-2BA3-49CD-A668-498821E7C59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2489BA6-2BA3-49CD-A668-498821E7C59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2489BA6-2BA3-49CD-A668-498821E7C59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB2444A-321D-42A0-9EF8-E987A73E1A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB2444A-321D-42A0-9EF8-E987A73E1A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB2444A-321D-42A0-9EF8-E987A73E1A6B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB2444A-321D-42A0-9EF8-E987A73E1A6B}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37F921A3-B34F-4118-86C7-22C8B9A09DE4}
+	EndGlobalSection
+EndGlobal

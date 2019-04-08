@@ -1,0 +1,49 @@
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Customer By Name :</span>
+    </div>
+    <input [(ngModel)]="CustomersearchTerm" placeholder="Search By Customer.." class="form-control"  aria-label="Search By Customer.." aria-describedby="basic-addon1">
+  </div>
+
+<div class="input-group mb-12" >
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Vehicle By Status :      </span>
+    </div>
+    <input [(ngModel)]="VehiclesearchTerm" placeholder="Search By Vehicle Status.." class="form-control"  aria-label="Search By Vehicle.."  aria-describedby="basic-addon1">
+  </div>
+
+
+<div class="container">
+  <br><br>
+  <form>
+    <br><br>
+    <table class="table" style="width: 200%">
+      <tr ngclass="btn-primary">
+        <th class="bg-info" style="width: 16vmax">CustomerName</th>
+        <th class="bg-info">CustomerAddress</th>
+      </tr>
+      <tr *ngFor="let customer of allCustomers | CustomergrdFilter: CustomersearchTerm">
+        <td class="tbl2">{{customer.CustomerName}}</td>
+        <td class="tbl2">{{customer.CustomerAddress}}</td>
+        <td>
+          <table>
+            <tr ngclass="btn-primary">
+              <th class="bg-info" style="width: 200%">VIN</th>
+              <th class="bg-info" style="width: 200%">Status</th>
+              <th class="bg-info" style="width: 200%">RegNo</th>
+            </tr>
+            <tr *ngFor="let Vehicle of customer.Vehicle | VehiclegrdFilter: VehiclesearchTerm" 
+              [ngClass]="{'bg-danger': Vehicle.Status ==0, 'bg-success': Vehicle.Status ==1}">
+              <td>{{Vehicle.VIN}}</td>
+              <td>{{Vehicle.Status ==0? 'Disconnected' : 'Connected'}}</td>
+              <td>{{Vehicle.RegNo}}</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
