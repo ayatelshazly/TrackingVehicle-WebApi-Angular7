@@ -17,7 +17,7 @@ export class CustomerService {
 
  
   getAllCustomerVehicleDetail(): Observable<Customer[]> {
-    console.log('start  get');
+    console.log('start get');
     return Observable.interval(5000).flatMap(() => {
       return this.http.get<Customer[]>(this.url);
     });}

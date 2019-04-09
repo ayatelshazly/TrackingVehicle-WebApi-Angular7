@@ -1,0 +1,23 @@
+How To Run Project :
+===================
+1 - clone my project 
+2 - From the Tools menu, select NuGet Package Manager > Package Manager Console.
+3 - At the PM> prompt enter the following commands:
+	-enable-migrations
+	-add-migration InitialCreate
+	-update-database
+
+
+4- build the solution and Run , the WEBAPI is the startup Project , write this URL "http://localhost:56776/AllCustomersDetails" 
+	it will display all data of Customers and Vehicles 
+5 - Frontend , open CMD and Go to the location path of my solution,for Example 
+	- cd "your Location "
+	- npm install 
+	- ng serve 
+6- you may find an error after build , so change any line in this module "customer.service.ts" write  console.log('start get'); and again 
+		- ng serve 
+
+7 - the data and simulation will display in port "http://localhost:4200/"
+
+ 
+

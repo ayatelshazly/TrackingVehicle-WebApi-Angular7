@@ -1,0 +1,34 @@
+what i do in this project :
+================
+- in this build the skeleton of this project as 
+ - Data Access Layer 
+		- using CodeFirst EntityFrameWork
+		- SQL Server
+ - Business Layer 
+	- DTO : Mapping (Customer , Vehicles) Classes with DAL Classes
+ - Presentation Layer 
+	- Angular 7 
+ - UnitTest on :
+	- Customers 
+		- Get_AllCustomers_TestMethod: check if the count of data with my input is Identicall , check if the webAPI is runing well
+		- Customer_FindName_TestMethod:check if specific CustomerName is found in our API Result
+		- Customer_ListIsIdentical_TestMethod : check if the every single data with my input data is Identicall 
+	- Vehicles 
+		- Get_AllVehicle_TestMethod ..
+		- Vehicle_FindVIN_TestMethod ..
+		- Vehicle_ListIsIdentical_TestMethod
+
+
+Problems that i faced :
+===========================
+First 
+------
+i was planning to build my structure (DAL ,BLL , API ) .NetFrameWork,  and then represent my data through Angular 7 
+and make the Simulation of (Connect / disconnect) Vehicles by using SignalR ,  but i faced a big problem that SignalR
+is not compatible  with (.NetFrameWork and Angular 7) , if you want to represent your data through Angualr 7
+
+second:
+---------
+1- i decide to use .Net core , but if i make API .Net Core the other project will not be compatible with my API 
+2- so i make it with Observable and set interval to call the WebAPI every specific interval , and that's was great 
+
